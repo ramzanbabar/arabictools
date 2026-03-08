@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary:      #1B4FCC;
+  --primary-dark: #1540A8;
+  --accent:       #F59E0B;
+}
+
+html {
+  direction: rtl;
+  scroll-behavior: smooth;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+/* Code & developer tool output: always LTR */
+.ltr-output,
+.ltr-output * {
+  direction: ltr !important;
+  text-align: left !important;
+  font-family: "Courier New", monospace !important;
+}
+
+/* Number inputs always LTR */
+input[type="number"] {
+  direction: ltr;
+  text-align: right;
+}
+
+/* Smooth scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: #1B4FCC;
+  border-radius: 3px;
+}
